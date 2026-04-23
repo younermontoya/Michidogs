@@ -1,0 +1,123 @@
+
+    <nav class="navbar navbar-expand-lg" style="background-color: #3b3636;">
+        <div class="container-fluid">
+            <img class="logoNav" src="/img/logo.png" alt="logo de la empresa">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="d-flex rounded-3">
+                    <button class="border-0 iconoBuscador ms-2" type="submit"><i class="bi bi-search"></i></button>
+                    <input class="form-control me-2 border-0 shadow-none" type="search" placeholder="Search" name="producto" aria-label="Search">
+                </form>
+                <div class="ms-auto">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="productos-nav-ul">
+                        <li class="nav-item" id="comprasCliente" data-index="0">
+                            <a href="/" class="nav-link " aria-current="page">Compras</a>
+                        </li>
+                        <li class="nav-item" data-index="0">
+                            <a href="/" class="nav-link " aria-current="page">Home</a>
+                        </li>
+                        <li class="nav-item clicked" data-index="2">
+                            <a href="/views/users/productos.html" class="nav-link" id="productos" aria-current="page">Productos</a>
+                        </li>
+                        <li class="nav-item" data-index="3">
+                            <a href="/views/users/nosotros.html" class="nav-link" aria-current="page">Nosotros</a>
+                        </li>
+                            
+                                 <style>
+                                    .modal-backdrop {
+                                        z-index: 1000; 
+                                    }
+                                    .card-body{
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: start;
+                                    }
+                                    .btnProd{
+                                        background: #FA8516;
+                                        border: none;
+                                        border-radius: 10px;
+                                        padding: 10px;
+                                        transition: 0.4s;
+                                        color: black;
+                                        text-decoration: none !important;
+                                    }
+                                    .btnProd:hover{
+                                        background: #fa8516;
+                                        box-shadow: 5px 4px 10px rgba(255, 140, 0, 0.9);
+                                        color: #ffffff;
+                                    }
+                                    .modal-header .modal-title {
+                                    text-align: center;
+                                    }
+                    
+                                    
+                                </style>
+                                
+                                <!-- Botón que abre el modal -->
+                                <li id="modal-historial" data-index="4">
+                                    <button type="button" class="botonNavInicio" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+                                     Historial compra 
+                                    </button>
+                                </li>
+                                
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                               <h4 id="exampleModalLabel">Historial De Compras</h4> 
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <!-- Contenido del modal -->
+                                                <div class="card w-100 mb-3">
+                                                    <div class="row g-0">
+                                                        <div class="col-md-4">
+                                                            <img src="img/d197f3d63e273b6f5c105412b799eae6.jpeg" class="card-img-top" alt="...">
+                                                        </div>
+                                                        <div class="col-md-8">
+                                                            <div class="card-body">
+                                                                <h3 class="card-title cartaTit">Ultimos pedidos</h3>                                                                
+                                                                <h4>Pedido </h4>
+                                                                <p>Cantidad: </p>
+                                                                <p>Fecha: </p>
+                                                                <p>Hora: </p>
+                                                                <p>Total: </p>
+                                                                
+                                                                <a href="#" type="button" class="btnProd">Volver a pedir</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger">CANCELADO</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                      
+    
+    
+                        <li class="" id="botonNavInicio">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="botonNavInicio" data-bs-toggle="modal" data-bs-target="#inicio">
+                                Iniciar sesion <img src="https://media.tenor.com/lOJVstiH6AwAAAAi/huella-perrito-patita-footprint.gif" alt="" height="30px" width="30px">
+                            </button>  
+                        </li> 
+                        <li class="nav-item" id="nombreCliente" data-index="3">
+                            Jaime Molina <img src="https://media.tenor.com/lOJVstiH6AwAAAAi/huella-perrito-patita-footprint.gif" alt="" height="30px" width="30px" />
+                        </li>
+    
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+ 
+
+
+

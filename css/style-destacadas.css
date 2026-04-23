@@ -1,0 +1,149 @@
+:root {
+    --black:#000000;
+    --white:#ffffff;
+    --yellow:#f57b0a;
+    --light-pink:#ffeffe;
+    --principal-cafe:#3b3636;
+    --background-gray:#eee;
+    --secundario-cafe: #322e2e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,input {
+    font-family: 'Nunito', sans-serif;
+    background-color: var(--background-gray);
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    padding: 0 20px;
+}
+
+.button {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    font-weight: 700;    
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button-primary {
+    color: var(--dark);
+    background-color: var(--yellow);
+
+}
+
+.button-primary:hover {
+    background-color:#FA8516;
+    color: white;
+    transition:0.5s;
+}
+
+.button-secondary {
+    color: var(--black);
+    background-color: var(--yellow);
+}
+
+.button-secondary:hover {
+    background-color:#FA8516;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.input {
+    border: none;
+    font-size: 1.1rem;
+    background-color: var(--white);
+    padding: 10px;
+    outline: none;
+    color: var(--dark-purple);
+    border-radius: 5px;
+}
+
+/* clases destacadas */
+#destacadas{
+    width: 100%;
+    position: relative;
+    text-align: left;
+    padding: 150px 0 150px 0;
+    background: #3b3636;
+ }
+ #destacadas h2{
+    font-size: xx-large;
+    color: #fff;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 70px;
+ }
+#destacadas h2::after{
+    width: 60%;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 52%;
+}
+#destacadas .card-destacadas{
+    background: #322e2e;
+    border-radius: 4px;
+    position: relative;   
+}
+#destacadas .card-destacadas img{
+    width: 100%;
+    max-height: 400px;
+    border-radius: 4px 4px 0 0;
+    padding: 15px;
+}
+#destacadas .card-destacadas .cont-info{
+    background: #322e2e;
+    padding: 14px;
+    border-radius: 0 0 4px 4px;
+    transition: .4s;
+}
+#destacadas .card-destacadas .cont-info:hover{
+    background: var(--primary-color);
+}
+.card-destacadas .cont-info{
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 600;
+}
+.card-destacadas .cont-info p{
+    color: #c6c6c6;
+   font-size:16px;
+}
+/*SLIDER*/
+.slick-arrow{
+    background: #1f212c;
+    width: 30px;
+    height: 30px;
+    font-size: 1px;
+    color: transparent;
+    position: absolute;
+    top: -45px;
+    right: 0;
+    border: 0;
+    
+ }
+ .slick-prev{
+    right: 50px;
+    background: url("../img/flecha.png");
+    background-size: 100%;
+    transform: rotate(-360deg); 
+ }
+ .slick-next{
+   
+    background: url("../img/flecha.png");
+    background-size: 100%;
+    transform: rotate(-180deg);
+ }
+

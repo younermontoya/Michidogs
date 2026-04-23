@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+:root{
+    --main-color: #FA8516;
+    --secundary-color: #FA8516;
+    --sidebar-color: #fff;
+    --lighter-color: #e0e0e7;
+    --light-color: #2f2e2e;
+    --dark-color: #2f2e2e;
+    --button-first: #FA8516;
+    --button-second: #FA8516;
+
+    --font-smaller: 14px;
+    --font-bigger: 20px;
+}
+
+div.wizzard{
+    font-family: "Roboto Slab", serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8;
+    color: var(--dark-color);
+}
+
+a.logoWizzard{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.container.wizzard{
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 2em;
+}
+
+.form-box.contenedor{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5em;
+    border: 8px solid var(--lighter-color);
+    border-radius: 15px;
+    background-color: var(--sidebar-color);
+}
+
+/* Progress */
+
+.form-box.contenedor .progress.progreso{
+    position: relative;
+    padding: 1em;
+}
+
+.logo.Wizzard{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 50px;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 1.75em;
+    font-weight: 800;
+    color: #2f2e2e;
+    padding: 40px 48px;
+    text-align: center;
+}
+
+.logo.Wizzard span.logoMain{
+    color: var(--main-color);
+}
+
+/* Progress Steps */
+
+.progress.progreso ul.progress-steps{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+
+.progress.progreso ul.progress-steps li.paso{
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2em;
+}
+
+.progress.progreso ul.progress-steps li.paso > span{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    font-size: var(--font-smaller);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1em;
+    border-radius: 50%;
+    background-color: var(--lighter-color);
+    z-index: 1;
+}
+
+.progress.progreso ul.progress-steps li.active.paso > span{
+    color: var(--sidebar-color);
+    background-color: var(--main-color);
+    border: 4px solid var(--secundary-color);
+    z-index: 1;
+}
+
+.progress.progreso ul.progress-steps li.paso p span{
+    font-size: var(--font-smaller);
+    color: var(--light-color);
+}
+
+
+/* Form */
+
+.form-box.contenedor form.formulario{
+    width: 100%;
+    padding: 3em 1em;
+    background-color: var(--sidebar-color);
+    border-radius: 30px 30px 15px 15px;
+}
+
+form.formulario > div{
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form.formulario > div p{
+    color: var(--light-color);
+    margin-bottom: 2em;
+}
+
+form.formulario > div > div:not(.checkbox){
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+
+form.formulario :where(input.wizzard, select){
+    height: 40px;
+    padding: 0 1em;
+    border-radius: 7px;
+    outline-color: var(--secundary-color);
+    border: 1px solid var(--lighter-color);
+    background-color: transparent;
+}
+
+form.formulario label{
+    font-size: var(--font-smaller);
+    margin-bottom: 0.5em;
+    font-weight: 600;
+}
+
+form.formulario .checkbox input{
+    height: auto;
+}
+
+form.formulario > div:not(.btn-group) {
+    display: none;
+    -webkit-animation: fadeIn .6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    animation: fadeIn .6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@keyframes fadeIn{
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(10%);
+        transform: translateY(10%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+form.formulario > div.active {
+    display: block;
+}
+
+/* Button */
+
+.btn-group{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1em;
+    margin-top: 2em;
+}
+
+.btn-group [class*="btn-"] {
+    background-color: var(--main-color);
+    color: var(--sidebar-color);
+    padding: 0.5em 2em;
+    border: 4px solid var(--secundary-color);
+    border-radius: 36px;
+    cursor: pointer;
+    -webkit-transition: background-color .3s, border-color .3s ease ease-out;
+    transition: background-color .3s, border-color .3s ease ease-out;
+}
+
+.btn-group [class*="btn-"]:disabled{
+    background-color: var(--light-color);
+    border-color: var(--lighter-color);
+    cursor: default;
+}
+
+.btn-group [class*="btn-"]:hover:not(:disabled){
+    background-color: var(--button-first);
+    border-color: var(--button-second);
+}
+
+.btn-group .btn-submit, 
+.form-three.active ~ .btn-group .btn-next {
+    display: none;
+}
+
+.form-three.active ~ .btn-group .btn-submit {
+    display: block;
+}
+
+.form-three.active ~ .btn-group {
+    justify-content: flex-start;
+}
+
+::placeholder{
+    color: var(--light-color);
+}
+
+@media screen and (min-width: 768px){
+    .form-box.contenedor {
+        flex-direction: row;
+        margin-top: -25px;
+    }
+    .form-box.contenedor .progress.progreso {
+        flex: 1 0 35%;
+        min-width: 300px;
+        padding: 4em;
+        margin-left: 50px;
+        margin-top: 35px;
+        height: 578px;
+        background: transparent;
+    }
+
+    .logo{
+        margin: -48px -48px 40px;
+    }
+
+    .progress.progreso ul.progress-steps{
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .form-box.contenedor form.formulario{
+        padding: 3em;
+        border-radius: 0 15px 15px 0;
+    }
+
+    .progress.progreso ul li p.Pasos{
+        position: relative;
+        top: auto;
+        font-size: inherit;
+    }
+
+    .progress.progreso ul.progress-steps li.paso p.Pasos span{
+        display: block;
+    }
+}

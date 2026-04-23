@@ -1,0 +1,324 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    background-position: center;
+}
+.modal-footer{
+    margin-top: 30px;
+}
+#containerPrincipal{
+    margin: -160px 0px 0px 0px;
+}
+.Detalles ul .nav-items {
+    color: #000;
+    background-color: #fa8516;
+    border-color: orange;
+}
+
+button.btn-primary {
+    color: #f57b0a;
+    background-color: #fff;
+    border-color: #f57b0a;
+}
+
+button.btn-secondary {
+    color: #f57b0a;
+    background-color: #fff;
+    border-color: #f57b0a;
+}
+
+button.btn-primary:hover {
+    color: #000;
+    background-color: #f57b0a;
+    border-color: #faae16;
+    transition: 0.2s ease;
+}
+
+button.btn-secondary:hover {
+    color: #fff;
+    background-color: red;
+    border-color: red;
+    transition: 0.2s ease;
+}
+
+main {
+    margin: 30px 0px 0px 0px;
+}
+.col-md-3.textosPro {
+    width: 100px; 
+    margin: 0px 0px 0px 20px;
+
+}
+.imagenPrincipal {
+    transition: transform 0.25s ease;
+    cursor: zoom-in;
+    width: 300px;
+    height: 200px;
+    display: block; 
+    margin: 0px 60px 0px -60px ;
+}
+.imagenYOU .imagenPrincipal{
+    margin: 100px -80px 0px 30px ;
+    width: 270px;
+    height: 250px;
+}
+.imagenPrincipal.zoom {
+    transform: scale(1.6); 
+    cursor: zoom-out;
+}
+
+.tresPeques {
+    padding: 40px;
+    margin: 20px 70px 0px 70px;
+}
+.tresPeques img {
+    margin: 10px 0;
+    cursor: pointer; 
+    width: 130px; 
+    height: 110px; 
+}
+
+.Detalles {
+    margin: 0px -70px 60px 70px;
+}
+
+.infoSuperior h1, .infoSuperior h2 {
+    margin: 0 0 30px;
+}
+
+.infoInferior h3 {
+    margin: 60px 0;
+}
+
+#detalle-pro {
+    width: 100%;
+    position: relative;
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+
+.imagenYOU {
+    margin: 100 120px 90px -100px;
+}
+
+#detalle-pro .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#detalle-pro .tresPeques {
+    display: grid;
+    align-content: center;
+    justify-content: space-around;
+    padding-left: 150px;
+}
+
+#detalle-pro .row {
+    align-items: stretch;
+}
+
+#detalle-pro .textosPro {
+    display: grid;
+    justify-content: end;
+}
+
+.infoSuperior {
+    margin: 20px -80px 0px 80px;
+}
+
+.infoInferior {
+    margin:40px -80px 0px 80px;
+}
+
+.infoSuperior small {
+    font-size: x-large;
+}
+
+.infoSuperior span {
+    font-size: xx-large;
+}
+
+.infoInferior {
+    font-size: x-large;
+}
+
+.imagenYOU img {
+    margin-top: 150px;
+    height: 200px;
+    width: 180px;
+    margin-left: 70px;
+}
+
+#detalle-pro .container .infoProducto img {
+    max-width: 200px;
+    height: 50px;
+}
+
+.cantidad h3 {
+    font-size: medium;
+    margin: 80px 0 0;
+}
+
+.recuadroSR {
+    width: 44px;
+    transition: 0.3s;
+}
+
+.cantidad button {
+    margin-top: 20px;
+    border: none;
+}
+
+.cantidad button:hover {
+    color: #ffffff;
+    background-color: #ffb800;
+    transition: 0.3s;
+}
+
+
+
+.btn-primary {
+    left: 100%;
+    margin-left: 45%;
+    margin-top: 10%;
+}
+.Detalles .nav-item button{
+    color: #f57b0a;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .imagenPrincipal.zoom {
+        transform: scale(1.5); 
+        cursor: zoom-out;
+    }
+    .col-md-2, .col-md-5, .col-md-3 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .imagenYOU img {
+        margin-top: 20px;
+        max-width: 100%;
+        height: auto;
+    }
+    
+
+    h1.modal-title {
+        font-size: 1.5rem;
+    }
+
+    h2, h3, small {
+        font-size: 0.9rem;
+    }
+
+
+
+    .infoSuperior, .infoInferior {
+        margin: 10px 0;
+    }
+
+    .cantidad {
+        margin-top: 10px;
+    }
+}
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .col-md-2, .col-md-5, .col-md-3 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .imagenYOU img {
+        margin-top: 20px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    h1.modal-title {
+        font-size: 1.5rem;
+    }
+
+    h2, h3, small {
+        font-size: 0.9rem;
+    }
+
+
+
+    .infoSuperior, .infoInferior {
+        margin: 10px 0;
+    }
+
+    .cantidad {
+        margin-top: 10px;
+    }
+}
+@media (max-width: 965px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .col-md-2, .col-md-5, .col-md-3 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .imagenYOU img {
+        margin-top: 20px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    h1.modal-title {
+        font-size: 1.5rem;
+    }
+
+    h2, h3, small {
+        font-size: 0.9rem;
+    }
+    .infoSuperior, .infoInferior {
+        margin: 10px 0;
+    }
+
+    .cantidad {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .infoSuperior, .infoInferior {
+        margin: 20px 0;
+    }
+
+    .cantidad {
+        margin-top: 20px;
+    }
+
+    h1.modal-title {
+        font-size: 2rem;
+    }
+
+    h2, h3, small {
+        font-size: 1rem;
+    }
+
+
+}
